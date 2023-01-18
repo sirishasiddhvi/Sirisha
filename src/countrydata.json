@@ -1,0 +1,10 @@
+[
+    {"state_id":"1","state_name":"Maharastra","cities":[
+        {"city_id":"1","city_name":"Pune","state_id":"1"},
+        {"city_id":"2","city_name":"Mumbai","state_id":"1"}
+    ]},
+    {"state_id":"2","state_name":"Punjab","cities":[
+        {"city_id":"1","city_name":"Amritsar","state_id":"2"},
+        {"city_id":"2","city_name":"Ludhiana","state_id":"2"}
+    ]}
+]
