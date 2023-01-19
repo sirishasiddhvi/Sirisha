@@ -4,7 +4,7 @@ import light from "./login.png";
 import { Container } from "@mui/system";
 import axios from "axios";
 
-export function Sample() {
+export function SampleLogin() {
   const [user, setUser] = useState({
     mobilenumber: "",
     password: "",

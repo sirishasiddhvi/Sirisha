@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import countrydata from "./countrydata.json";
+
 export function Statedropdown() {
   const [statename, setStateName] = useState("");
   const [city, setCity] = useState([]);
@@ -44,7 +45,7 @@ export function Statedropdown() {
           </h3>
           <form className="row g-3" onSubmit={handleSubmit}>
             <TextField
-              fullWidth
+              sx={{width:"60%"}}
               id="select"
               label="state"
               name="state"
@@ -61,6 +62,7 @@ export function Statedropdown() {
             </TextField>
             <br />
             <TextField
+             sx={{width:"60%"}}
               select
               label="City"
               name="city"

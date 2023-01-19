@@ -1,4 +1,5 @@
 import React,{useState,useRef} from "react";
+
 export function RefFile(){
 const inputFile = useRef(null);
 const [file, setFile] = useState([]);
@@ -12,13 +13,13 @@ const handleChange = e => {
  
 return(
     <div>
-        <input
+        <input hidden
   type="file"
   onChange={handleChange}
   ref={inputFile} 
   />
 <button
-  onClick={filehandle}>
+  onClick={filehandle}>fileupload
   {/* <img src="https://www.svgrepo.com/show/12604/paper-clip.svg" /> */}
 </button>
     </div>
