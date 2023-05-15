@@ -1,0 +1,13 @@
+.image-container img{
+    background:white;
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    padding: 12px;
+    /* border-color:#4c004c ; */
+    background-color:#4c004c;
+    transform: translate(60px,-75px);
+}
+img{
+    border:2px solid #4c004c;
+    }

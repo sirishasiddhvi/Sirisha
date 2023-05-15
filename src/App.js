@@ -12,7 +12,12 @@ import { Statedropdown } from "./Statedropdown";
 import { ImageUpload } from "./Components/ImagesUpload";
 import { SampleLogin } from "./SampleLogin";
 import ToDoList from "./ToDoList";
+import {Tablex} from "./exp";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { CkEditor } from "./Components/CkEditor";
+import { Profile } from "./Components/Profile";
+import { BootStrapEx } from "./Components/BootStrapEx";
+import {Restful} from "./Components/RestFul"
 
 function App() {
   return (
@@ -41,6 +46,13 @@ function App() {
       <br />
       <Link to="/AddEmp">AddEmp</Link>
       <br />
+      <Link to="/ckeditor">CkEditor</Link>
+      <br />
+      <Link to="/profile">Profile</Link>
+      <br />
+      <Link to="/bootstrap">Bootstrap</Link>
+      <br />
+      <Link to="/restful">RestFul</Link>
       <br />
       <Routes>
         <Route path="/" element={<Dashboard />} />
@@ -54,7 +66,12 @@ function App() {
         <Route path="SampleLogin" element={<SampleLogin />} />
         <Route path="Statedropdown" element={<Statedropdown />} />
         <Route path="ToDoList" element={<ToDoList />} />
-        <Route path="AddEmp" element={<AddEmp />} />
+        <Route path="AddEmp" element={<Tablex />} />
+        <Route path="ckeditor" element={<CkEditor />} />
+        <Route path="profile" element={<Profile />} />
+        <Route path="bootstrap" element={<BootStrapEx />} />
+        <Route path="restful" element={<Restful />} />
+        {/* <Route path="AddEmp" element={<AddEmp />} /> */}
       </Routes>
     </BrowserRouter>
   );
